@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding:0;
+    background-color: #f5c0c0;
+}
+h2{
+   text-align: center;
+   padding-top: 20px;
+   width: 100%;
+}
+.box-main{
+    display: flex;
+    flex-direction: row;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+   
+}
+
+.searchBar{
+    width: 65%;
+   text-align: center;
+   
+}
+.btn{
+    padding: 6px 20px;
+    margin: 8px 2px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #ff7171;
+    cursor: pointer;
+}
+.btn-sm{
+   padding: 5px 10px;
+   vertical-align: middle;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: #9fd8df;
+    background-image: none;
+}
+.select {
+    position: relative;
+    display: block;
+    width: 8em;
+    height: 2em;
+    line-height: 2;
+    background: #9fd8df;
+    overflow: hidden;
+    border-radius: .25em;
+   
+}
+select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color:black;
+    cursor: pointer;
+}
+select::-ms-expand {
+    display: none;
+} 
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #9fd8df;
+    pointer-events: none;
+}
+.select:hover::after {
+    color: #f5c0c0;
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 20px 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
